@@ -5,10 +5,22 @@ function processCustomer(id, counter) {
     setTimeout(() => {
       const endTime = Date.now();
       const duration = ((endTime - startTime) / 1000).toFixed(2);
-      console.log(`Customer ${id} finished processing at counter ${counter} (${startTime})`);
+      console.log(`Customer ${id} finished processing at counter ${counter} (${unixToTime(startTime)})`);
       resolve(`Customer ${id}`);
     }, 1000);  // Assuming each customer takes 1 second to process
   });
+}
+
+function unixToTime(timestamp) {
+  const date = new Date(timestamp)
+
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  let seconds = date.getSeconds();
+
+  const time = `${hours}:${minutes}:${seconds}`;
+
+  return time;
 }
 
 async function processInBatches(customers, batchSize) {
