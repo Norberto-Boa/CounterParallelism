@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width="100%" height=400px src="./Exercise.jpg" alt="Project logo"></a>
+ <img width="100%" height=500px src="./Exercise.jpg" alt="Project logo"></a>
 </p>
 
 <h2 align="center">Assignment 2</h2>
@@ -28,11 +28,24 @@ The exercise was to recreate the formula of calculating the power consumption to
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+You can clone this repository by running the following command
 
+<h3> GitHub CLI </h3>
+
+```
+gh repo clone https://github.com/Norberto-Boa/CounterParallelism.git
+```
+
+<h3>Git clone</h3>
+
+```
+git clone https://github.com/Norberto-Boa/CounterParallelism.git
+```
+
+Then you must navigate to the project directory.
 ### Prerequisites
 
-What things you need to install the software and how to install them.
+To run this code you need to have node installed.
 
 <img
   width=80px height=80px 
@@ -42,39 +55,40 @@ What things you need to install the software and how to install them.
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running.
+You must navigate to the Assignment directory and then install all the dependencies needed for this project.
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+Navigate to the project directory
 
 ```
-until finished
+cd Assignment/2/
 ```
 
-End with an example of getting some data out of the system or using it for a little demo.
+Install all the dependencies needed for this project
+
+```
+npm install 
+```
+
+Run the project
+
+```
+node Exercise2.js 
+```
+
 
 
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [readlineSync](https://github.com/anseki/readline-sync) - Interaction
+
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
+- [Norberto Boa](https://github.com/Norberto-Boa) - FullStack Developer
+- [Jennifer Manhice ](https://github.com/JenManhice) - Backend Developer
+- [Frank Coutinho](https://github.com/Frank-Coutinho) - Backend Developer
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+- Exercise given by [Lars Albino Lemos](https://github.com/larslemos)
